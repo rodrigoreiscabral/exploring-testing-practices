@@ -44,8 +44,13 @@ Escolha uma prática ou dado de teste relevante e explique com suas próprias pa
 
 ## Respostas
 
-Repositório: `<URL_DO_REPOSITÓRIO>`
+Repositório: expressjs/express
 
-URL TestMiner: `<URL_NO_TESTMINER>`
+URL TestMiner: https://andrehora.github.io/testminer/#/expressjs/express
 
-Explicação: `<SUA_EXPLICAÇÃO>`
+Explicação:
+Um dado muito relevante extraído do TestMiner é a pilha de ferramentas de teste utilizada pelo repositório, composta pelos pacotes npm mocha, nyc e supertest.
+
+Essa combinação revela uma prática de teste altamente consolidada no ecossistema Node.js para validação de APIs web. O Mocha atua como o framework principal, fornecendo a estrutura para escrever e executar os casos de teste. O Supertest é uma ferramenta essencial e específica para testes de integração de servidores HTTP, permitindo simular requisições reais (como GET e POST) nas rotas do Express de forma ágil e sem a necessidade de subir um servidor em rede. Por fim, o Nyc foca na cobertura de código (code coverage), gerando relatórios que indicam quais linhas de código foram ou não executadas durante os testes.
+
+Outra prática de engenharia de software notável nos dados apresentados é a proporção e a organização dos arquivos. O projeto possui 106 arquivos de código fonte e uma quantidade quase equivalente voltada para os testes, incluindo 91 arquivos classificados como "Test Helpers" e 18 como "Fixtures". Essa estrutura demonstra que a equipe do Express adota a prática de modularizar também o código de teste. Em vez de criar scripts gigantescos e confusos, eles separam dados simulados (fixtures) e funções auxiliares (helpers), tornando a manutenção da suíte de testes muito mais limpa e escalável.
